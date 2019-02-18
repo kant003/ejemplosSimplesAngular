@@ -1,0 +1,14 @@
+<p>
+  Template reference: Podemos hacer referencia a tags del propio
+  DOM 
+</p>
+
+Numero 1: <input #num1 type="text">
+<br/>
+Numero 2: <input #num2 type="text">
+<br/>
+El resultado es: {{resultado}}
+<br/>
+
+<button (click)="realizarSuma(num1.value, num2.value)">Sumar</button>
+

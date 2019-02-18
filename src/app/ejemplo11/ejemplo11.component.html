@@ -1,0 +1,9 @@
+<p>
+  Datos tipo raw (angular nos protege del xss)
+</p>
+
+<p>{{4+5}}</p>
+
+<p>{{frasePeligrosa}}</p>
+
+<p [innerHtml]="frasePeligrosa"></p>

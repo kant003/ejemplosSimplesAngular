@@ -1,0 +1,28 @@
+<p>
+  Style, class y attr bounds
+</p>
+
+ 
+<button style="color:red">Esto es un boton</button>
+
+<button [style.color]=" 'blue' ">Esto es un boton</button>
+
+<button [style.color]=" miColor ">Esto es un boton</button>
+
+<button [style.color]=" getColor() ">Esto es un boton</button>
+
+<button [style.color]=" hayError() ? 'red' : 'blue' ">Esto es un boton</button>
+
+<br/><br/>
+
+<div class="bonito">Este es mi estilo</div>
+<br/>
+<div [class.bonito]="false">Este es mi estilo</div>
+<br/>
+<div [class.bonito]=" ponerBonito() ">Este es mi estilo</div>
+
+<br/><br/>
+
+<button aria-label="Cerrar ventana">X</button>
+<br/>
+<button [attr.aria-label]=" 'Cerrar ventana' ">X</button>

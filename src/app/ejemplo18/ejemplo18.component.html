@@ -1,0 +1,18 @@
+<p>
+  Formularios reactivos.
+  No olvides importar ReactiveFormsModule en el appModule
+</p>
+
+<form [formGroup]="form" (submit)="onSubmit(form.value)">
+  <label for="nombre">Nombre</label>
+  <input type="text" name="nombre" formControlName="nombre">
+  
+  <br/>
+
+  <label for="email">Email</label>
+  <input type="email" name="email" formControlName="email">
+
+  <br/>
+
+  <input type="submit" value="Enviar" [disabled]="form.invalid">
+</form>
