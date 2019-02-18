@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Ejemplo10Component } from './ejemplo10.component';
+import { MayusculasParesPipe } from '../mayusculas-pares.pipe';
 
 describe('Ejemplo10Component', () => {
   let component: Ejemplo10Component;
@@ -8,7 +9,8 @@ describe('Ejemplo10Component', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Ejemplo10Component ]
+      declarations: [ Ejemplo10Component ,
+         MayusculasParesPipe]
     })
     .compileComponents();
   }));

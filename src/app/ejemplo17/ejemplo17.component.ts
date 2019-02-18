@@ -8,9 +8,9 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class Ejemplo17Component implements OnInit {
 
-  public elId = ''
+  public elId = '';
 
-  constructor(public activateRoute: ActivatedRoute) { 
+  constructor(public activateRoute: ActivatedRoute) {
     this.elId = activateRoute.snapshot.params['id'];
   }
 

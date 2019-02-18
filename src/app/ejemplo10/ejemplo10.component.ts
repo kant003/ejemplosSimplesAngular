@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class Ejemplo10Component implements OnInit {
 
   public laFecha = new Date();
-  public nombre = 'Angel'
-  
+  public nombre = 'Angel';
+
   constructor() { }
 
   ngOnInit() {

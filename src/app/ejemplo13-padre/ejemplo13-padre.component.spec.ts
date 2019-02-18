@@ -1,6 +1,8 @@
+import { Ejemplo13HijoComponent } from './../ejemplo13-hijo/ejemplo13-hijo.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { Ejemplo13PadreComponent } from './ejemplo13-padre.component';
+import { FormsModule } from '@angular/forms';
 
 describe('Ejemplo13PadreComponent', () => {
   let component: Ejemplo13PadreComponent;
@@ -8,7 +10,8 @@ describe('Ejemplo13PadreComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Ejemplo13PadreComponent ]
+      declarations: [ Ejemplo13PadreComponent, Ejemplo13HijoComponent ],
+      imports: [  FormsModule ]
     })
     .compileComponents();
   }));
